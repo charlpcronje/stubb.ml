@@ -17,24 +17,70 @@ Stubb is a url shortener that focuses to collect as much data about the device a
 
 ## Libs used
 
-- node-device-detector [https://www.npmjs.com/package/node-device-detector](https://www.npmjs.com/package/node-device-detector)
-- axios [https://www.npmjs.com/package/axios#installing](https://www.npmjs.com/package/axios#installing)
-
+- DeviceDetector [https://github.com/matomo-org/device-detector](https://github.com/matomo-org/device-detector)
 
 Stubb has no client, only uses entries in `data/urls.json`
 
 ```json
 {
-    "data" : [
-        "stub.stubb.ml" : {
-            "password" : ""
-            "redirect" : "tets.com"
+    "date": "2022-05-19 15:54:29",
+    "env": [],
+    "req": {
+        "post": [],
+        "get": [],
+        "put": {},
+        "delete": {},
+        "request": []
+    },
+    "headers": {
+        "Cdn-Loop": "cloudflare",
+        "Cf-Connecting-Ip": "2409:8c00:2411:101::1",
+        "Accept": "*\/*",
+        "User-Agent": "curl\/7.29.0",
+        "Cf-Visitor": "{\"scheme\":\"https\"}",
+        "Cf-Ray": "70de02e6ff027b55-LAX",
+        "Cf-Ipcountry": "CN",
+        "Accept-Encoding": "gzip",
+        "X-Real-Ip": "172.70.210.90",
+        "X-Forwarded-For": "172.70.210.90",
+        "X-Forwarded-Proto": "http",
+        "X-Forwarded-Scheme": "http",
+        "Host": "stubb.ml",
+        "Connection": "Keep-Alive"
+    },
+    "device": {
+        "clientInfo": {
+            "type": "library",
+            "name": "curl",
+            "version": "7.29.0"
         },
-        {
-            "password" : ""
-            "redirect" : "tets.com"
-        }
-    ]
+        "osInfo": [],
+        "device": "",
+        "brand": "",
+        "model": ""
+    },
+    "url": {
+        "url": {
+            "scheme": "http",
+            "host": "stubb.ml",
+            "path": "\/"
+        },
+        "scheme": "http",
+        "user": null,
+        "pass": null,
+        "host": "stubb.ml",
+        "port": null,
+        "path": "\/",
+        "query": null,
+        "fragment": null
+    },
+    "title": 1
 }
+```
+
+## Install Instructions
+
+```sh
+
 ```
 
